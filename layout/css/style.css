@@ -1,0 +1,95 @@
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    background-color: #1E1E1E;
+    letter-spacing: 0.05em;
+	line-height: 1.7em;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-style: bold;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+
+.offer-cont__title{
+    font-size: 64px;
+    margin: 127px 0px 0px 0px;
+}
+@media screen and (min-width: 100px) and (max-width: 499px) {
+    .offer-cont__title {
+        font-size: 40px;
+    }
+}
+
+.offer-cont__subphoto-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.offer-cont__subtitle{  
+    color: #DD3333;
+    margin: 0px 0 10px 0;
+}
+.offer-cont__text{
+    font-size: 14px;
+}
+
+.offer-cont__cont{
+    margin: 40px 0 40px 0;
+}
+
+.fit{
+    width: 100%;
+}
+.offer-cont__button{
+    display: flex;
+    flex-wrap: nowrap;
+    color: #fff;
+}
+
+.redsquare{
+    background-color: #DD3333;
+    height: 80vh;
+    width: 40vh;
+    position: absolute;
+    z-index: -1;
+}
+@media screen and (min-width: 991px) and (max-width: 1299px) {
+    .redsquare {
+        height: 80vh;
+        width: 30vh;
+    }
+}
+
+.square{
+    height: 43px;
+    width: 43px;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.rectangle{
+    background-color: #DD3333;
+    flex-grow: 1;
+    display: flex;
+    font-weight: 400;
+	font-size: 14px;
+    letter-spacing: 0.105em;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+@media screen and (min-width: 100px) and (max-width: 299px) {
+    .rectangle {
+        font-size: 10px;
+    }
+}
