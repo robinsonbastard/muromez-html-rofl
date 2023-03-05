@@ -56,14 +56,14 @@ h1, h2, h3, h4, h5, h6 {
 .redsquare{
     background-color: #DD3333;
     height: 80vh;
-    width: 40vh;
+    width: 54vh;
     position: absolute;
     z-index: -1;
 }
-@media screen and (min-width: 991px) and (max-width: 1299px) {
+@media screen and (min-width: 991px) and (max-width: 1599px) {
     .redsquare {
         height: 80vh;
-        width: 30vh;
+        width: 50vh;
     }
 }
 
