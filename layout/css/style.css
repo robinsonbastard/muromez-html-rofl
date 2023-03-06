@@ -17,7 +17,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .offer-cont__title{
     font-size: 64px;
-    margin: 127px 0px 0px 0px;
 }
 @media screen and (min-width: 100px) and (max-width: 499px) {
     .offer-cont__title {
@@ -38,11 +37,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 .offer-cont__text{
     font-size: 14px;
+    padding-top: 0px;
 }
 
-.offer-cont__cont{
-    margin: 40px 0 40px 0;
+.offer-cont__desc{
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    flex-direction: column;
 }
+
+.offer-cont__desc-down{
+    padding-top: 20px;
+}
+
 
 .fit{
     width: 100%;
@@ -55,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .redsquare{
     background-color: #DD3333;
-    height: 80vh;
+    height: 100vh;
     width: 54vh;
     position: absolute;
     z-index: -1;
@@ -92,4 +100,81 @@ h1, h2, h3, h4, h5, h6 {
     .rectangle {
         font-size: 10px;
     }
+}
+
+.offer-workout__title{
+    display: flex;
+    flex-wrap: nowrap;
+    text-transform: uppercase;
+    font-size: 64px;
+    margin: 50vh 0px 0px 0px;
+}
+
+.offer-workout__main-title{
+
+}
+
+.offer-workout__second-title{
+    font-size: 24px;
+    align-self: baseline;
+    color: #DD3333;
+}
+
+.offer-workout__photo{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.offer-workout__photo-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer-workout__photo-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fit1{
+    height: 100%;
+}
+
+.offer-workout__subtitle{
+    text-transform: uppercase;
+}
+
+.offer-workout__desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.offer-workout__text{
+    padding-top: 20px;
+}
+
+.offer-workout__desc-down{
+    padding-top: 20px;
+}
+
+
+/*блок колонок*/
+
+.first-screen-title{
+    padding-top: 10vh;
+}
+.first-screen-cont{
+    padding-top: 2vh;
+}
+.first-screen-button{
+    padding-top: 5vh;
+}
+.workout-screen-title{
+
+}
+.workout-screen-first-cont{
+
 }
