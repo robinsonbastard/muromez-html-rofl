@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=MSI\\SQLEXPRESS;Database=localdb;Trusted_Connection=True;MultipleActiveResultSets=true"
+  }
+}
