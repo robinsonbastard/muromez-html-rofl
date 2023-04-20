@@ -189,9 +189,15 @@ h1, h2{
 }
 
 
-.arrow-left-menu{
+.button-carousel-right{
     position: absolute;
-    left: 0;
-    
+    z-index: -1;
+    right: 0;
+    margin-left: 20vw;
 }
 
+.button-carousel-left{
+    position: absolute;
+    z-index: -1;
+    right: 2;
+}
