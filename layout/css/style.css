@@ -5,7 +5,6 @@ body {
     background-color: #1E1E1E;
     letter-spacing: 0.05em;
 	line-height: 1.7em;
-    height: 5000px;
 
 }
 h1, h2{
@@ -74,15 +73,7 @@ h1, h2{
         width: 50vh;
     }
 }
-.square{
-    height: 43px;
-    width: 43px;
-    background-color: #FFFFFF;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    display: flex;
-}
+
 .rectangle{
     background-color: #DD3333;
     flex-grow: 1;
@@ -122,7 +113,7 @@ h1, h2{
     display: flex;
     flex-wrap: nowrap;
 }
-.offer-workout_git _main-title{
+.offer-workout__main-title{
     font-size: 64px;
 }
 .offer-workout__second-title{
@@ -130,7 +121,15 @@ h1, h2{
     padding-top: 10px;
     color: #DD3333;
 }
-
+.square{
+    height: 43px;
+    width: 43px;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    display: flex;
+}
 .workout-screen-first-cont{
     display: flex;
     flex-direction: column;
@@ -193,11 +192,83 @@ h1, h2{
     position: absolute;
     z-index: -1;
     right: 0;
-    margin-left: 20vw;
+    margin-left: 1000px;
 }
 
 .button-carousel-left{
     position: absolute;
     z-index: -1;
-    right: 2;
+    right: 0;
+}
+.button-carousel-left{
+    height: 43px;
+    width: 43px;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    margin-left: 1vw;
+}
+
+.button-carousel-right{
+    height: 43px;
+    width: 43px;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    margin-right: 15vw;
+}
+
+.workout-screen-footer{
+    padding-top: 200px;
+}
+
+.phone-number{
+    font-weight: 700;
+}
+.workout-screen-footer-media{
+    display: flex;
+    align-items: center;
+}
+.workout-screen-footer-main_content{
+    display: flex;
+    align-items: center;
+    height: 106px;
+    justify-content: space-between;
+}
+
+.logo-media{
+    margin-left: 23px;
+}
+
+.workout-screen-footer-phone_number{
+    font-weight: 700;
+}
+
+.workout-screen-footer-left-side{
+    display: flex;
+    align-items: center
+}
+
+.red-poloska{
+    height: 106px;
+    background-color: #DD3333;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    z-index: -1;
+
+}
+
+.workout-screen-footer-sub_content{
+    
 }
