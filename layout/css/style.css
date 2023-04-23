@@ -270,5 +270,10 @@ h1, h2{
 }
 
 .workout-screen-footer-sub_content{
-    
+    height: 142px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
