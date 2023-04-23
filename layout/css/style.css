@@ -277,3 +277,35 @@ h1, h2{
     justify-content: center;
     flex-direction: column;
 }
+
+.navbar{
+    background-color: #1E1E1E;
+    height: 117px;
+}
+
+.navbar-custom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav-item{
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.navbar-dark{
+    font-weight: 700;
+}
+
+.nav-link{
+    color: #DD3333;
+}
+
+.phone-viev{
+    display: flex;
+}
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #DD3333;
+}
