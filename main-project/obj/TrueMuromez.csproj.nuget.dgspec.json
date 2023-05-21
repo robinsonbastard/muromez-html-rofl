@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\TrueMuromez\\TrueMuromez\\TrueMuromez.csproj": {}
+    "C:\\Users\\User\\source\\repos\\git\\muromez\\main-project\\TrueMuromez.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\TrueMuromez\\TrueMuromez\\TrueMuromez.csproj": {
+    "C:\\Users\\User\\source\\repos\\git\\muromez\\main-project\\TrueMuromez.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\TrueMuromez\\TrueMuromez\\TrueMuromez.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\git\\muromez\\main-project\\TrueMuromez.csproj",
         "projectName": "TrueMuromez",
-        "projectPath": "C:\\Users\\User\\source\\repos\\TrueMuromez\\TrueMuromez\\TrueMuromez.csproj",
+        "projectPath": "C:\\Users\\User\\source\\repos\\git\\muromez\\main-project\\TrueMuromez.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\TrueMuromez\\TrueMuromez\\obj\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\git\\muromez\\main-project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

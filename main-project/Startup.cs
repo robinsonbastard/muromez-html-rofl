@@ -22,7 +22,7 @@ namespace TrueMuromez
         [Obsolete]
         public Startup(Microsoft.AspNetCore.Hosting.IHostingEnvironment hostEnv)
         {
-            _confString = new ConfigurationBuilder().SetBasePath(hostEnv.ContentRootPath).AddJsonFile("dbSettings.json").Build();
+            _confString = new ConfigurationBuilder().SetBasePath(hostEnv.ContentRootPath).AddJsonFile("appsettings.json").Build();
         }
 
         public void ConfigureServices(IServiceCollection services)
@@ -32,8 +32,10 @@ namespace TrueMuromez
 
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(_confString.GetConnectionString("DefaultConnection")));
             services.AddScoped<IGenericRepos<Product>, GenericRepos<Product>>();
-            services.AddScoped<IGenericRepos<Content>, GenericRepos<Content>>();
+            services.AddScoped<IGenericRepos<ProductContent>, GenericRepos<ProductContent>>();
             services.AddScoped<IGenericRepos<Training>, GenericRepos<Training>>();
+            services.AddScoped<IGenericRepos<TrainingCategory>, GenericRepos<TrainingCategory>>();
+            services.AddScoped<IGenericRepos<TrainingContent>, GenericRepos<TrainingContent>>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -59,7 +61,7 @@ namespace TrueMuromez
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Product}/{action=ProductView}/{id?}");
+                    pattern: "{controller=Training}/{action=TrainingView}/{id?}");
             });
         }
     }

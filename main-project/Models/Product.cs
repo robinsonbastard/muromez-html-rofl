@@ -11,7 +11,7 @@ namespace TrueMuromez.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public int Price { get; set; }
-        public IEnumerable<Content> Contents { get; set; }
+        public IEnumerable<ProductContent> Contents { get; set; }
 
     }
 }

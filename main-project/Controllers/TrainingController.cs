@@ -14,17 +14,21 @@ namespace TrueMuromez.Controllers
     public class TrainingController : Controller
     {
         private IGenericRepos<Training> _trainingRepos;
+        private IGenericRepos<TrainingCategory> _trainingCategoryRepos;
 
-        public TrainingController(IGenericRepos<Training> training)
+        public TrainingController(IGenericRepos<Training> training, IGenericRepos<TrainingCategory> trainingCategoryRepos)
         {
             _trainingRepos = training;
+            _trainingCategoryRepos = trainingCategoryRepos;
         }
 
         public ActionResult TrainingView()
         {
             var trainMod = new TrainingViewModel
             {
-                Trainings = _trainingRepos.GetAll()
+                Trainings = _trainingRepos.GetWithInclude(g => g.TrainingContents, h => h.TrainingCategory),
+                TrainingCategories = _trainingCategoryRepos.GetAll()
+              
             };
 
             return View(trainMod);

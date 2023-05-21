@@ -4,21 +4,85 @@
     ViewData["Title"] = "Home Page";
 }
 
-@foreach (var item in Model.Trainings)
-{
-    <div style="padding-left:70px; padding-right:70px">
-        <div class="row " style="background-color:white;">
-            <div class="col position-static" style="padding-top:30px; padding-left:50px;">
-                <h3>@item.Name</h3>
-                <p class="mb-auto">@item.Description</p>
-                <p class="mb-auto">@item.Price</p>
-                <br />
-                <br />
-                <a href="#" style="border-style:groove; border-color:red; border-width:4px; color:black">Узнать больше</a>
+<div class="container-xl">
+    <div class="row justify-content-end">
+        <div class="col-lg-5">
+            <div class="redsquare">
             </div>
         </div>
     </div>
-    <br />
-    <br />
-}
+    <div class="row first-screen-title">
+        <div class="col-lg-12">
+            <h1 class="offer-cont__title">
+                ТРЕНИРОВКИ
+            </h1>
+        </div>
+    </div>
+    <div class="row first-screen-cont">
+        <div class="col-lg-5 offer-cont__desc">
+            <div class="offer-cont__desc-up">
+                <h2 class="offer-cont__subtitle">
+                    СПОРТЗАЛ
+                </h2>
+                <p class="offer-cont__text">
+                    Удобное расположение в центре города БАЛАШОВ
+                    и тренировки для детей и взрослых с индивидуальным
+                    подходом для реализации поставленных целей и задач.
+                </p>
+                <div class="offer-cont__desc-down">
+                    <h2 class="offer-cont__subtitle">
+                        ОНЛАИН
+                    </h2>
+                    <p class="offer-cont__text">
+                        Персональные занятия с тренером на любой,
+                        удобной для вас площадке: DISCORD, SKYPE, WHATSAPP и т.п
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-8">
+                    <img class="fit" src="~/img/img1.png" alt="img5">
+                </div>
+                <div class="col-4 offer-cont__subphoto-right">
+                    <img class="fit" src="~/img/img2.png" alt="img6">
+                    <img class="fit" src="~/img/img3.png" alt="img6">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row first-screen-button">
+        <div class="col-lg-5">
+            <div class="offer-cont__button">
+                <div class="rectangle">
+                    Посмотреть программу
+                </div>
+                <div class="square">
+                    <img src="~/img/arrow-down.svg" alt="dots icon">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @foreach (var cat in Model.TrainingCategories)
+    {
+        <h1>@cat.Name</h1>
+        foreach (var train in Model.Trainings.Where(g => g.TrainingCategoryID == cat.ID))
+        {
+            <h3>@train.Name</h3>
+            <h4>@train.Description</h4>
+            foreach (var cont in train.TrainingContents)
+            {
+                <h1>@cont.URL</h1>
+                <br />
+            }
+            <br />
+        }
+        <br />
+    }
+
+
+</div>
 

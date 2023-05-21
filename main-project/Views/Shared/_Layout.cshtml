@@ -1,80 +1,19 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - TrueMuromez</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/style.css">
 </head>
-<body style="background-color:lightgrey">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:black">
-            <a href="@Url.Action("ProductView", "Product")"><img src="~/img/Logo.png" width="200"/></a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav " style="font-size:20px; padding-left:30px">
-                    <li class="nav-item active jsunderline" style="padding-left: 10px; padding-right: 10px; border-bottom: solid 4px black;">
-                        <a class="nav-link " href="#">Тренеровки </a>
-                    </li>
-                    <li class="nav-item active jsunderline" style="padding-left: 10px; padding-right: 10px; border-bottom: solid 4px black">
-                        <a class="nav-link" href="#">Производство</a>
-                    </li>
-                    <li class="nav-item active jsunderline" style="padding-left: 10px; padding-right: 10px; border-bottom: solid 4px black">
-                        <a class="nav-link" href="#">Портфолио</a>
-                    </li>
-                    <li class="nav-item active jsunderline" style="padding-left: 10px; padding-right: 10px; border-bottom: solid 4px black">
-                        <a class="nav-link" href="#">Контакты</a>
-                    </li>
+<body>   
 
-                </ul>
+    @RenderBody()
 
-            </div>
-            <form class="nav-item active" style="padding-right: 100px;">
-                <a class="nav-link jsfornumber" href="#" style="color: white; font-size: larger; border-color: red; border-width: 4px; border-style: groove; border-top-left-radius: 100% 20px; border-bottom-right-radius: 100% 20px; ">8-906-777-77-77 </a>
-            </form>
-        </nav>
-        <br />
-        <br />
-    </header>
-    <div>
-        <main role="main" class="pb-xl-3" >
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - TrueMuromez - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
 </body>
 </html>
-
-<script type="text/javascript">
-    (function ($) {
-        $(function () {
-            $('.jsunderline').hover(
-                function () {
-                    $(this).css('border-bottom', 'groove 4px red');
-                },
-                function () {
-                    $(this).css('border-bottom', 'solid 4px black');
-                }
-            )
-            $('.jsfornumber').hover(
-                function () {
-                    $(this).css('color', 'Pink');
-                    $(this).css('border-color', 'Crimson')
-                },
-                function () {
-                    $(this).css('color', 'white');
-                    $(this).css('border-color', 'red')
-                }
-            )
-        });
-    }(jQuery));
-</script>

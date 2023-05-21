@@ -16,6 +16,6 @@ namespace TrueMuromez
 
         public Microsoft.EntityFrameworkCore.DbSet<Product> Product { get; set; }
         public Microsoft.EntityFrameworkCore.DbSet<Training> Training { get; set; }
-        public Microsoft.EntityFrameworkCore.DbSet<Content> Content { get; set; }
+        public Microsoft.EntityFrameworkCore.DbSet<ProductContent> ProductContent { get; set; }
     }
 }
