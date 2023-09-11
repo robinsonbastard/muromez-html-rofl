@@ -12,18 +12,19 @@
 
 **Модель сотрудника:**
 ```
+Employee:
 {
   Id int
   Name string
   Surname string
   Phone string
   CompanyId int
-  Passport
+  Passport:
   {
     Type string
     Number string
   }
-Department
+  Department:
   {
     Name string
     Phone string
